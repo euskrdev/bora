@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <header class="hero">
+            <div class="container">
+                <h1>🎉 Boora – Sua Vibe, Seu Rolê!</h1>
+                <a href="#cadastro" class="btn">Quero me cadastrar</a>
+            </div>
+        </header>
+
+        <section class="filtros">
+            <div class="container">
+                <h2>🎯 Filtrar Eventos</h2>
+                <select id="filtro-categoria">
+                    <option value="">Todas as Categorias</option>
+                    <option value="música">🎶 Música</option>
+                    <option value="cultura">🎨 Cultura</option>
+                    <option value="balada">🎉 Balada</option>
+                    <option value="gastronomia">🍔 Gastronomia</option>
+                    <option value="esporte">⚽ Esporte</option>
+                </select>
+        
+                <input type="date" id="filtro-data">
+                <input type="text" id="filtro-local" placeholder="Digite o local">
+        
+                <button onclick="filtrarEventos()">Filtrar</button>
+            </div>
+        </section>
+
+        <section class="eventos">
+            <div class="container">
+                <h2>🎭 Eventos em Destaque</h2>
+                <div id="lista-eventos"></div>
+            </div>
+        </section>
+        
+        <script src="script.js"></script>
+    
+        <section class="como-funciona">
+            <div class="container">
+                <h2>📍 Como Funciona?</h2>
+                <ol>
+                    <li>Navegue pelos eventos disponíveis.</li>
+                    <li>Filtre por categoria, data ou localização.</li>
+                    <li>Salve seus favoritos e receba lembretes.</li>
+                    <li>Compartilhe com amigos e combine a diversão!</li>
+                </ol>
+            </div>
+        </section>
+    
+        <section class="cadastro" id="cadastro">
+            <div class="container">
+                <h2>🚀 Não Fique de Fora!</h2>
+                <p>Cadastre-se gratuitamente e fique por dentro dos eventos mais bombados de Recife.</p>
+                <form>
+                    <input type="email" placeholder="Digite seu e-mail" required>
+                    <button type="submit" class="btn">Quero Receber!</button>
+                </form>
+            </div>
+        </section>
+    
+        <section class="divulgar">
+            <div class="container">
+                <h2>📣 Divulgue Seu Evento no Bora!</h2>
+                <p>É organizador? Publique seu evento gratuitamente e alcance mais pessoas.</p>
+                <a href="#" class="btn">Divulgar Meu Evento</a>
+            </div>
+        </section>
+    
+        <footer>
+            <div class="container">
+                <p>📍 Recife Merece um Guia de Eventos Completo!</p>
+                <p>📩 Dúvidas? Fale conosco: <a href="Boora:contato@bora.com">contato@bora.com</a></p>
+                <p>📱 Siga-nos nas redes sociais: 
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a> | 
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
+                    <a href="https://www.tiktok.com" target="_blank">TikTok</a>
+                </p>
+                
+            </div>
+        </footer>
+    
+    </body>
+    </html>
